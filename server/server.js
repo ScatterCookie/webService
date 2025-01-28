@@ -1,4 +1,4 @@
-import express, { response } from "express";
+import express from "express";
 import cors from "cors";
 
 const app = express();
@@ -12,7 +12,7 @@ let goodGames = [
 ];
 
 app.get("/", (req, res) => {
-  response.json("its working!");
+  res.json(goodGames);
 });
 
 app.listen(8080, () => console.log("Listening on port 8080!"));
