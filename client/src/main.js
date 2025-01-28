@@ -7,7 +7,7 @@ async function getGoodGames() {
   const response = await fetch(`${baseUrl}/games`);
 
   const data = response.json();
-  console.log(response.json());
+  console.log(data);
 }
 
 getGoodGames();
