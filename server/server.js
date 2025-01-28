@@ -11,7 +11,7 @@ let goodGames = [
   { name: "Animal Crossing", platform: "Nintendo Switch" },
 ];
 
-app.get("/", (req, res) => {
+app.get("/goodGames", (req, res) => {
   res.json(goodGames);
 });
 
